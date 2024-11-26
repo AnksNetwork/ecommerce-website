@@ -1,0 +1,159 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 2rem;
+  }
+  
+  header h1 {
+    display: inline-block;
+  }
+  
+  nav ul {
+    list-style: none;
+    float: right;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f4f4f4;
+  }
+  
+  .hero h2 {
+    font-size: 2rem;
+  }
+  
+  .hero button {
+    padding: 0.5rem 1rem;
+    color: white;
+    background-color: #333;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .categories {
+    padding: 2rem;
+  }
+  
+  .category-grid {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .category {
+    text-align: center;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+  }
+  .product-list {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+  
+  .product-card {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-card img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .product-card h3 {
+    margin: 1rem 0 0.5rem;
+  }
+  
+  .product-card p {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .product-card button {
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .product-card button:hover {
+    background-color: #555;
+  }
+  .cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+  }
+  
+  .cart-table th,
+  .cart-table td {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    text-align: center;
+  }
+  
+  .cart-summary {
+    text-align: right;
+    margin: 2rem 0;
+  }
+  
+  .cart-summary button {
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .cart-summary button:hover {
+    background-color: #555;
+  }
+  @media (max-width: 768px) {
+    .product-grid {
+      grid-template-columns: 1fr; /* Single column for small screens */
+    }
+  
+    .cart-table th, .cart-table td {
+      font-size: 0.9rem;
+    }
+  }
+  
